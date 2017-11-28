@@ -1,13 +1,25 @@
+.blog{
+    position: absolute;
+    width: 100%;
+    height: 3000px;
+    background-color: white;
+    right: 0px;
+    margin-top: -120px;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #767676;
+}
+.navbar-wrapper{
+    padding-top: 20px;
 }
 
 #block-for-slider {
     width: 1200px;
     height: 1000px;
-    margin: 0 auto;
-    margin-top: 0;
+    margin: 50px auto;
 }
 
 #viewport {
@@ -19,6 +31,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 #slidewrapper {
@@ -105,4 +118,22 @@ body {
 
 .slide-nav-btn:hover {
     cursor: pointer;
+}
+
+.container .marketing{
+    padding-top: 50px;
+}
+
+.navbar-brand{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 30px;
+    position: absolute;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -300px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #47b2e2;
 }
