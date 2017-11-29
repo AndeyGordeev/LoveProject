@@ -3,14 +3,14 @@ from django.contrib.auth import logout
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
-from django.views.generic import FormView
+from django.views import generic
 from . import forms
 
 # Create your views here.
-def dashboard(request):
-    return render(request, 'user/dashboard.html')
+class Dashboard(LoginRequiredMixin, generic.TemplateView):
+    template_name = 'user/dashboard.html'
 
-class LogoutView(LoginRequiredMixin, FormView):
+class LogoutView(LoginRequiredMixin, generic.FormView):
     form_class = forms.LogoutForm
     template_name = 'user/logout.html'
 
