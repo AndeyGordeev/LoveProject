@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-
+{% load static %}
 {% load loveMessage_tags%}
 
 
@@ -7,6 +7,24 @@
 
 {% block content %}
     <div class="container ptdashboard">
-        {% loveMessage_form %}
+    {% loveMessage_form %}
+        <h1>Cообщения</h1>
+    <div class="sms">
+        {% for lovemessag in lovemeassage.all %}
+            <div class="panel panel-default">
+            <!-- Default panel contents -->
+              <div class="panel-heading">
+                  <time class="pull-right" datetime="{{ lovemessag.recorded_at }}">{{ lovemessag.recorded_at|date:"SHORT_DATE_FORMAT" }}</time>
+                  {{ lovemessag.topic }}:{{ lovemessag.user.username }}
+              </div>
+              <div class="panel-body">
+                 <p>{{ lovemessag.note }}</p>
+              </div>
+            </div>
+        {% endfor %}
     </div>
+
+
+    </div>
+
 {% endblock %}

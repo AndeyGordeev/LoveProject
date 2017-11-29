@@ -111,7 +111,7 @@ body {
 }
 
 .ptdashboard{
-    padding-top: 30px;
+    padding: 40px 50px 0 50px;
     height: 100%;
     width: 50%;
     background-color: white;
@@ -119,4 +119,23 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-in;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.list-group-item{
+
+}
+
+.sms{
+    margin-top: 30px;
+}
+
+.panel-default{
+    margin-top: -10px;
+    word-break: break-all;
+}
+
+.memoryH{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 30px;
+    color: #47b2e2;
 }
