@@ -8,7 +8,7 @@ from . import forms
 
 # Create your views here.
 def dashboard(request):
-    return render(request, 'dashboard.html')
+    return render(request, 'user/dashboard.html')
 
 class LogoutView(LoginRequiredMixin, FormView):
     form_class = forms.LogoutForm

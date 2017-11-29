@@ -4,10 +4,16 @@
     padding-bottom: 30px;
 }
 
+h1{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #767676;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .navbar-wrapper{
     padding-top: 20px;
@@ -105,13 +111,12 @@ body {
 }
 
 .ptdashboard{
-    right: 0px;
-    position: absolute;
-    padding-top: 20px;
+    padding-top: 30px;
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-color: white;
     animation-name: opacityahnge;
     animation-duration: 1s;
     animation-timing-function: ease-in;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }

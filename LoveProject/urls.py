@@ -17,9 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic import TemplateView
 from user import urls as user_urls
+from loveMessage import urls as love_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^user/', include(user_urls, namespace='user')),
+    url(r'^love/', include(love_urls, namespace='loveMessage')),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
 ]

@@ -1,13 +1,12 @@
 {% extends 'layout.html' %}
 
+{% load loveMessage_tags%}
+
+
 {% block title %}Dashboard | {{ block.super }}{% endblock %}
 
 {% block content %}
     <div class="container ptdashboard">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Dashboard</h1>
-            </div>
-        </div>
+        {% loveMessage_form %}
     </div>
 {% endblock %}
