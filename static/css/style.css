@@ -1,10 +1,7 @@
 .blog{
-    position: absolute;
-    width: 100%;
-    height: 3000px;
     background-color: white;
-    right: 0px;
-    margin-top: -120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 body {
@@ -14,85 +11,6 @@ body {
 }
 .navbar-wrapper{
     padding-top: 20px;
-}
-
-#block-for-slider {
-    width: 1200px;
-    height: 1000px;
-    margin: 50px auto;
-}
-
-#viewport {
-    width: 100%;
-    display: table;
-    position: relative;
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-#slidewrapper {
-    position: relative;
-    width: calc(100% * 6);
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-}
-
-#slidewrapper ul, #slidewrapper li {
-    margin: 0;
-    padding: 0;
-}
-
-#slidewrapper li {
-    width: calc(100%/6);
-    list-style: none;
-    display: inline;
-    float: left;
-}
-
-.slide-img {
-    width: 100%;
-}
-
-#prev-btn, #next-btn {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: calc(50% - 25px);
-    opacity: 0.3;
-}
-
-#next-btn{
-    background-image: url('../img/next.png');
-}
-
-#prev-btn{
-    background-image: url('../img/prev.png');
-}
-
-#prev-btn:hover, #next-btn:hover {
-    cursor: pointer;
-}
-
-#prev-btn {
-    left: 20px;
-}
-
-#next-btn {
-    right: 20px;
 }
 
 #nav-btns {
@@ -127,11 +45,6 @@ body {
 .navbar-brand{
     font-family: "Times New Roman", sans-serif;
     font-size: 30px;
-    position: absolute;
-}
-
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: -300px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -140,8 +53,9 @@ body {
 
 .pt{
     border-radius: 30px;
-    height: 500px;
-    width: 500px;
+    height: 30%;
+    width: 30%;
+    margin-bottom: 40%;
     margin-top: 230px;
     padding: 50px 50px 50px 50px;
     background-color: white;
@@ -149,6 +63,10 @@ body {
     animation-name: opacityahnge;
     animation-duration: 1s;
     animation-timing-function: ease-in;
+}
+
+@media screen and (max-width: 600px) {
+    .pt {width: 90%; height: 30%}
 }
 
 @keyframes opacityahnge {
@@ -189,12 +107,10 @@ body {
 .ptdashboard{
     right: 0px;
     position: absolute;
-    height: 500px;
+    padding-top: 20px;
+    height: 100%;
     width: 100%;
-    margin-top: 230px;
-    padding: 50px 50px 50px 50px;
     background-color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
     animation-name: opacityahnge;
     animation-duration: 1s;
     animation-timing-function: ease-in;
