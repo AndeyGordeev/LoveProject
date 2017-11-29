@@ -21,5 +21,5 @@ from user import urls as user_urls
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^user/', include(user_urls, namespace='user')),
-    url(r'^$', TemplateView.as_view(template_name='index.html'), name='hone'),
+    url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
 ]
