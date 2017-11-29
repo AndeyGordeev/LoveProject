@@ -182,3 +182,20 @@ body {
     margin-top: -10px;
 }
 
+.navbar-right{
+    margin-right: -70px;
+}
+
+.ptdashboard{
+    right: 0px;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    margin-top: 230px;
+    padding: 50px 50px 50px 50px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation-name: opacityahnge;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
