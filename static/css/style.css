@@ -177,3 +177,12 @@ body {
 @media screen and (max-width: 600px) {
     .ptdashboard {width: 90%;}
 }
+
+@media screen and (max-width: 600px) {
+    #heart {width: 90%; height: 90%}
+}
+
+
+.lead{
+    word-break: break-all;
+}
