@@ -14,7 +14,9 @@ body {
     padding: 0;
     background-color: #767676;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-wrap: break-word;
 }
+
 .navbar-wrapper{
     padding-top: 20px;
 }
@@ -132,7 +134,6 @@ body {
 
 .panel-default{
     margin-top: -10px;
-    word-break: break-all;
 }
 
 .memoryH{
@@ -180,9 +181,4 @@ body {
 
 @media screen and (max-width: 600px) {
     #heart {width: 90%; height: 90%}
-}
-
-
-.lead{
-    word-break: break-all;
 }
