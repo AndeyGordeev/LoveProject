@@ -3,7 +3,8 @@
 <form method="post" action="{% url 'loveMessage:create' %}">
     <h2 class="memoryH" >Оставить воспоминание</h2>
     <div class="row">
-        {% bootstrap_form form %}
+        {% bootstrap_field form.topic label='Тема'%}
+        {% bootstrap_field form.note label='Текст'%}
         {% buttons submit='Сохраиить запись' %}
         {% endbuttons %}
     </div>

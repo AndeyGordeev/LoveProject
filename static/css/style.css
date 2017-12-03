@@ -14,7 +14,8 @@ body {
     padding: 0;
     background-color: #767676;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    word-wrap: break-word;
+    word-wrap: normal;
+    -ms-word-wrap: normal;
 }
 
 .navbar-wrapper{

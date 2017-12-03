@@ -8,14 +8,8 @@
         <div class="row">
             <h1 class="loginH">Войти</h1>
             <form action="" method="post">
-                <div class="form-group">
-                    <label class="control-label" for="id_username">Имя пользователя:</label>
-                    <input type="text" name="username" autofocus maxlength="254" class="form-control" placeholder="Имя пользователя" title="" required id="id_username" />
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="id_password">Пароль:</label>
-                    <input type="password" name="password" class="form-control" placeholder="Пароль" title="" required id="id_password" />
-                </div>
+                {% bootstrap_field form.username label='Логин'%}
+                {% bootstrap_field form.password label='Пароль'%}
                 {% csrf_token %}
                 <input type="submit" value="Войти" class="btn loginbtn">
             </form>
